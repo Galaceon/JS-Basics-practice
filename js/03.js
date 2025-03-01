@@ -2,7 +2,7 @@
 
 const producto = 'Audifonos Gamer';
 
-const disponible; // Esta mal, const no puede crearse sin valor
+// const disponible; // Esta mal, const no puede crearse sin valor
 
 producto = true; // Esta mal ya que las variable iniciadas con const no puede ser reasignadas
 
