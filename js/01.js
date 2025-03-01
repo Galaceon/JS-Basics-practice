@@ -25,4 +25,4 @@ var nombreProducto = 'Monitor HD'; // Camelcase - Mas usado
 var NombreProducto = 'Monitor HD'; // Pascal Case
 var nombreproducto = 'MonitorHD'; // lowerCase
 
-console.log(PRODUCTO); //no funcionara ya que la variable fue creada en minusculas
+// console.log(PRODUCTO); //no funcionara ya que la variable fue creada en minusculas
