@@ -19,7 +19,7 @@ const producto = {
 }
 
 
-
+/**--------------------------------------------- **/
 function Juego(nombre, precio, disponible) {
     this.nombre = nombre;
     this.precio = precio;
@@ -33,11 +33,11 @@ function formatearJuego(juego) {
     return `El juego ${juego.nombre} vale $ ${juego.precio} y esta ${juego.disponible}`;
 }
 
-console.log(formatearJuego(darkSouls))
+// console.log(formatearJuego(darkSouls))
 
-// console.log(darkSouls);
-// console.log(hollowKnight);
-
+console.log(darkSouls);
+console.log(hollowKnight);
+/**--------------------------------------------- **/
 
 
 /** THIS **/
