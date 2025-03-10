@@ -5,9 +5,9 @@ let animales = [
 ]
 
 let precio1 = 10;
-let precio2 = 5
+let precio2 = 5;
 
-let PCPiezas = ['Raton', 'Pantalla', 'Grafica', 'Procesador', 'Cables']
+let PCPiezas = ['Raton', 'Pantalla', 'Grafica', 'Procesador', 'Cables'];
 let arrayDeNumeros = [10, 20, 30, 40, 50];
 
 let total = 0
