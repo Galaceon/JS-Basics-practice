@@ -18,28 +18,6 @@ const producto = {
     precio : 30
 }
 
-
-/**--------------------------------------------- **/
-function Juego(nombre, precio, disponible) {
-    this.nombre = nombre;
-    this.precio = precio;
-    this.disponible = disponible;
-}
-
-const darkSouls = new Juego ('Dark souls', 30, true);
-const hollowKnight = new Juego ('Hollow Knight', 15, false);
-
-function formatearJuego(juego) {
-    return `El juego ${juego.nombre} vale $ ${juego.precio} y esta ${juego.disponible}`;
-}
-
-// console.log(formatearJuego(darkSouls))
-
-console.log(darkSouls);
-console.log(hollowKnight);
-/**--------------------------------------------- **/
-
-
 /** THIS **/
 // const obj = {
 //     name : 'Anto',
