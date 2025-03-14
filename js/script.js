@@ -18,6 +18,22 @@ const producto = {
     precio : 30
 }
 
+
+
+const boton = document.querySelector('#boton');
+
+boton.addEventListener('click', function() {
+    Notification.requestPermission()
+    .then(resultado => console.log(resultado))
+})
+
+if(Notification.permission == 'granted') {
+    new Notification('Esta es una notificación', {
+        icon: '../img/AntoLogoNegroBckgCarmesi.png',
+        body: 'Practica de AntoDev'
+    })
+}
+
 /** THIS **/
 // const obj = {
 //     name : 'Anto',
