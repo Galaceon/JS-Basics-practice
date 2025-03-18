@@ -1,31 +1,31 @@
-Async / await
+/** Async / await **/
+function descargarUsuarios() {
+    return new Promise( resolve => {
+        console.log('descargando los usuarios')
 
-function descargarClientes(callback) {
-    
-    console.log('Se estan descargando los clientes')
-
-    setTimeout( () => {
-        callback('Los clientes han sido descargados')
-    }, 5000)
+        setTimeout( () => {
+            resolve('clientes descargados')
+        }, 3000)
+    }) 
 }
 
+function descargarProductos() {
+    return new Promise( resolve => {
+        console.log('descargando los productos')
 
-// function descargarNuevosClientes() {
-//     return new Promise( resolve => {
-//         console.log('Descargando Clientes... Espere...')
-
-//         setTimeout( () => {
-//             resolve('Los clientes fueron descargados')
-//         }, 5000)
-//     })
-// }
+        setTimeout( () => {
+            resolve('productos descargados')
+        }, 8000)
+    }) 
+}
 
 async function app() {
     try {
-        const resultado = await descargarClientes();
-        console.log(resultado);
-    } catch (error) {
-        console.log(error)
+        const resultado = await Promise.all( [ descargarUsuarios(), descargarProductos()])
+        console.log(resultado[0]);
+        console.log(resultado[1]);
+    }catch(error) {
+        console.log(error);
     }
 }
 
